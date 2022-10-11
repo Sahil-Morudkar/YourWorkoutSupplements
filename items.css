@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Asul&family=Lobster&family=Noto+Sans:wght@200&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(90deg, rgb(235, 235, 209), rgb(196, 187, 187))
+}
+
+header {
+    background: beige;
+    height: 65px;
+}
+
+.heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Alkalami', serif;
+    margin-top: 10px;
+}
+
+.logo {
+    height: 65px;
+    width: 90px;
+}
+
+.navbar {
+    display: flex;
+    background: black;
+}
+
+.btn {
+    visibility: hidden;
+    background: black;
+    color: antiquewhite;
+    position: absolute;
+    right: 0;
+    margin: 5px;
+}
+
+ul {
+    padding-right: 20px;
+}
+
+.nav-contents {
+    display: inline-block;
+    list-style: none;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.heading-line {
+    font-weight: bolder;
+}
+
+.line {
+    height: 3px;
+    width: 200px;
+    background: rgb(177, 28, 28);
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Alkalami', serif;
+}
+
+.btn-container {
+    margin-top: 15px;
+}
+
+.btns {
+    border: 2px solid rgb(177, 28, 28);
+    border-radius: 5px;
+    background: rgb(220, 220, 186);
+    color: rgb(177, 28, 28);
+    font-family: 'Alkalami', serif;
+    margin: 0px 5px 0px;
+}
+
+.btns:hover {
+    background: beige;
+}
+
+.items-section {
+    display: flex;
+    width: 90vw;
+    margin-top: 10px;
+    border: 2px solid rgb(177, 28, 28);
+    border-radius: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.items {
+    display: flex;
+    flex-direction: row;
+}
+
+.item-img {
+    height: 200px;
+    width: 200px;
+    padding: 10px 10px 10px;
+}
+
+
+.item-description {
+    font-size: 13px;
+}
+
+.item-info {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 200px;
+}
+
+.item-title {
+    font-size: 18px;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.item-btn {
+    width: 50px
+}
+
+.price {
+    font-size: 15px;
+    margin-top: 50px;
+}
+
+@media screen and (max-width:600px) {
+    .heading {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar {
+        width: 100%;
+    }
+
+    .nav-contents {
+        display: block;
+        list-style: none;
+    }
+
+    .links {
+        height: 0;
+        overflow: hidden;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .show-links {
+        height: 130px;
+        width: 100%;
+    }
+
+    .btn {
+        visibility: visible;
+    }
+
+    .heading-line {
+        margin-top: 135px;
+    }
+
+    .item-img {
+        height: 100px;
+        width: 100px;
+        padding: 10px 10px 10px;
+    }
+
+    .item-description {
+        font-size: 10px;
+    }
+
+    .item-info {
+        width: 300px;
+        height: 100px;
+    }
+
+    .item-title {
+        font-size: 12px;
+        margin: 0;
+        margin-top: 10px;
+    }
+
+    .price {
+        font-size: 12px;
+        margin-top: 0px;
+    }
+
+}
+
+@media screen and (max-width:475px) {
+    .item-img {
+        height: 60px;
+        width: 60px;
+        padding: 10px 10px 10px;
+    }
+
+    .item-description {
+        font-size: 6px;
+    }
+
+    .item-info {
+        width: 300px;
+        height: 60px;
+    }
+
+    .item-title {
+        font-size: 8px;
+        margin: 0;
+        margin-top: 10px;
+    }
+
+    .price {
+        font-size: 8px;
+        margin-top: 0px;
+    }
+}
+
+@media screen and (max-width:475px) {
+    .item-img {
+        height: 40px;
+        width: 40px;
+        padding: 10px 10px 10px;
+    }
+
+    .item-description {
+        font-size: 6px;
+    }
+
+    .item-info {
+        width: 200px;
+        height: 40px;
+    }
+
+    .item-title {
+        font-size: 8px;
+        margin: 0;
+        margin-top: 10px;
+    }
+
+    .price {
+        font-size: 8px;
+        margin-top: 0px;
+    }
+}
